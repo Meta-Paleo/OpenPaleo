@@ -39,6 +39,10 @@ Note that there was an issue here with encoding of the csv exports from Scopus. 
 
 For Acta Palaeontological Polonica, this was not entirely resolved, and two lines of fragmented entries were removed prior to subsequent analysis.
 
+#### Clean data
+
+Using [Visdat](https://github.com/ropensci/visdat) R package to visually inspect the data, we were able to spot the [misaligned rows](./data/journal_data/05-Review_of_Palaeobotany_and_Palynology/) and [block shifted columns](./data/journal_data/17-Bulletin_of_Geosciences/). These formatting errors were then fixed in MS-Excel and saved again in CSV format with UTF-8 encoding. Following this, the headers were formatted for user friendliness during analysis and the empty rows and columns were scrubbed off the data using [Janitor](https://github.com/sfirke/janitor) R package.
+
 #### PLOS ONE
 
 Data for PLOS ONE were obtained using the Rplos package in R. The code, resulting data, and Unpaywall query results can all be found [here](https://github.com/Meta-Paleo/OpenPaleo/tree/master/Journal%20data/PLOS%20ONE). Note that some of the data here are different to that obtained to Scopus queries.
