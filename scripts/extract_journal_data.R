@@ -1,7 +1,7 @@
 # Pull in relevant data from Journal data source files
 # Replace with local directory where needed
 
-Journal_data<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Google Scholar journals with WoS data.csv")
+Journal_data<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/Google_Scholar_journals_list_with_WoS_data.csv")
 
 GS_rank<-Journal_data[,"GS_Rank"]
 h5.index<-Journal_data[,"h5.index"]
@@ -14,8 +14,8 @@ WOS_rank<-Journal_data[,"WOS_rank"]
 ############# Acta Palaeontologica Polonica
 
 # Note that some lines are still corrupted here, even after parsing. These were eliminated to avoid data errors (file version 2)
-APP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Acta Palaeontologica Polonica/ActaPalaeontologicaPolonica_Scopus2.csv")
-APP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Acta Palaeontologica Polonica/ActaPalaeontologicaPolonica_Unpaywall.csv")
+APP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/09-Acta_Palaeontologica_Polonica/ActaPalaeontologicaPolonica_Scopus.csv")
+APP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/09-Acta_Palaeontologica_Polonica/ActaPalaeontologicaPolonica_Unpaywall.csv")
 
 # Create a new factor for OA status
 APP_OA<-APP_unpaywall[,"is_oa"]
@@ -60,8 +60,8 @@ dev.off()
 
 ########### Bulletin of Geosciences
 
-BoG_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Bulletin of Geosciences/BulletinofGeosciences_Scopus.csv")
-BoG_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Bulletin of Geosciences/BulletinofGeosciences_Unpaywall.csv")
+BoG_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/17-Bulletin_of_Geosciences/BulletinofGeosciences_Scopus.csv")
+BoG_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/17-Bulletin_of_Geosciences/BulletinofGeosciences_Unpaywall.csv")
 
 # Create a new factor for OA status
 BoG_OA<-BoG_unpaywall[,"is_oa"]
@@ -107,8 +107,8 @@ dev.off()
 
 ########## Comptes Rendus Palevol
 
-CRP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Comptes Rendus Palevol/ComptesRendusPalevol_Scopus.csv")
-CRP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Comptes Rendus Palevol/ComptesRendusPalevol_Unpaywall.csv")
+CRP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/14-Comptes_Rendus_Palevol/ComptesRendusPalevol_Scopus.csv")
+CRP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/14-Comptes_Rendus_Palevol/ComptesRendusPalevol_Unpaywall.csv")
 
 # Create a new factor for OA status
 CRP_OA<-CRP_unpaywall[,"is_oa"]
@@ -154,8 +154,8 @@ dev.off()
 
 ########## Cretaceous Research
 
-CR_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Cretaceous Research/CretaceousResearch_Scopus.csv")
-CR_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Cretaceous Research/CretaceousResearch_Unpaywall.csv")
+CR_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/03-Cretaceous_Research/CretaceousResearch_Scopus.csv")
+CR_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/03-Cretaceous_Research/CretaceousResearch_Unpaywall.csv")
 
 # Create a new factor for OA status
 CR_OA<-CR_unpaywall[,"is_oa"]
@@ -201,8 +201,8 @@ dev.off()
 
 ########## Facies
 
-Facies_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Facies/Facies_Scopus.csv")
-Facies_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Facies/Facies_Unpaywall.csv")
+Facies_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/15-Facies/Facies_Scopus.csv")
+Facies_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/15-Facies/Facies_Unpaywall.csv")
 
 # Create a new factor for OA status
 Facies_OA<-Facies_unpaywall[,"is_oa"]
@@ -248,8 +248,8 @@ dev.off()
 
 ########## Geobios
 
-Geobios_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Geobios/Geobios_Scopus.csv")
-Geobios_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Geobios/Geobios_Unpaywall.csv")
+Geobios_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/18-Geobios/Geobios_Scopus.csv")
+Geobios_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/18-Geobios/Geobios_Unpaywall.csv")
 
 # Create a new factor for OA status
 Geobios_OA<-Geobios_unpaywall[,"is_oa"]
@@ -295,8 +295,8 @@ dev.off()
 
 ########## Historical Biology
 
-HB_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Historical Biology/HistoricalBiology_Scopus.csv")
-HB_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Historical Biology/HistoricalBiology_Unpaywall.csv")
+HB_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/16-Historical_Biology/HistoricalBiology_Scopus.csv")
+HB_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/16-Historical_Biology/HistoricalBiology_Unpaywall.csv")
 
 # Create a new factor for OA status
 HB_OA<-HB_unpaywall[,"is_oa"]
@@ -342,8 +342,8 @@ dev.off()
 
 ########## Journal of Paleontology
 
-JoP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Journal of Paleontology/JournalofPaleontology_Scopus.csv")
-JoP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Journal of Paleontology/JournalofPaleontology_Unpaywall.csv")
+JoP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/06-Journal_of_Paleontology/JournalofPaleontology_Scopus.csv")
+JoP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/06-Journal_of_Paleontology/JournalofPaleontology_Unpaywall.csv")
 
 # Create a new factor for OA status
 JoP_OA<-JoP_unpaywall[,"is_oa"]
@@ -389,8 +389,8 @@ dev.off()
 
 ########## Journal of Systematic Palaeontology
 
-JSP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Journal of Systematic Palaeontology/JournalofSystematicPalaeontology_Scopus.csv")
-JSP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Journal of Systematic Palaeontology/JournalofSystematicPalaeontology_Unpaywall.csv")
+JSP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/07-Journal_of_Systematic_Palaeontology/JournalofSystematicPalaeontology_Scopus.csv")
+JSP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/07-Journal_of_Systematic_Palaeontology/JournalofSystematicPalaeontology_Unpaywall.csv")
 
 # Create a new factor for OA status
 JSP_OA<-JSP_unpaywall[,"is_oa"]
@@ -436,8 +436,8 @@ dev.off()
 
 ########## Journal of Vertebrate Paleontology
 
-JVP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Journal of Vertebrate Paleontology/JournalofVertebratePaleontology_Scopus.csv")
-JVP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Journal of Vertebrate Paleontology/JournalofVertebratePaleontology_Unpaywall.csv")
+JVP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/02-Journal_of_Vertebrate_Paleontology/JournalofVertebratePaleontology_Scopus.csv")
+JVP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/02-Journal_of_Vertebrate_Paleontology/JournalofVertebratePaleontology_Unpaywall.csv")
 
 # Create a new factor for OA status
 JVP_OA<-JVP_unpaywall[,"is_oa"]
@@ -483,8 +483,8 @@ dev.off()
 
 ########## Lethaia
 
-Lethaia_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Lethaia/Lethaia_Scopus.csv")
-Lethaia_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Lethaia/Lethaia_Unpaywall.csv")
+Lethaia_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/12-Lethaia/Lethaia_Scopus.csv")
+Lethaia_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/12-Lethaia/Lethaia_Unpaywall.csv")
 
 # Create a new factor for OA status
 Lethaia_OA<-Lethaia_unpaywall[,"is_oa"]
@@ -530,8 +530,8 @@ dev.off()
 
 ########## Marine Micropaleontology
 
-MM_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Marine Micropaleontology/MarineMicropaleontology_Scopus.csv")
-MM_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Marine Micropaleontology/MarineMicropaleontology_Unpaywall.csv")
+MM_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/10-Marine_Micropaleontology/MarineMicropaleontology_Scopus.csv")
+MM_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/10-Marine_Micropaleontology/MarineMicropaleontology_Unpaywall.csv")
 
 # Create a new factor for OA status
 MM_OA<-MM_unpaywall[,"is_oa"]
@@ -577,8 +577,8 @@ dev.off()
 
 ########## Palaeobiodiversity and Palaeoenvironments
 
-PP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Palaeobiodiversity and Palaeoenvironments/PalaeobiodiversityandPalaeoenvironments_Scopus.csv")
-PP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Palaeobiodiversity and Palaeoenvironments/PalaeobiodiversityandPalaeoenvironments_Unpaywall.csv")
+PP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/19-Palaeobiodiversity_and_Palaeoenvironments/PalaeobiodiversityandPalaeoenvironments_Scopus.csv")
+PP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/19-Palaeobiodiversity_and_Palaeoenvironments/PalaeobiodiversityandPalaeoenvironments_Unpaywall.csv")
 
 # Create a new factor for OA status
 PP_OA<-PP_unpaywall[,"is_oa"]
@@ -624,8 +624,8 @@ dev.off()
 
 ############## Palaeogeography, Palaeoclimatology, Palaeoecology
 
-PPP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Palaeogeography, Palaeoclimatology, Palaeoecology/PalaeogeographyPalaeoclimatologyPalaeoecology_Scopus.csv")
-PPP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Palaeogeography, Palaeoclimatology, Palaeoecology/PalaeogeographyPalaeoclimatologyPalaeoecology_Unpaywall.csv")
+PPP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/01-Palaeogeography_Palaeoclimatology_Palaeoecology/PalaeogeographyPalaeoclimatologyPalaeoecology_Scopus.csv")
+PPP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/01-Palaeogeography_Palaeoclimatology_Palaeoecology/PalaeogeographyPalaeoclimatologyPalaeoecology_Unpaywall.csv")
 
 # Create a new factor for OA status
 PPP_OA<-PPP_unpaywall[,"is_oa"]
@@ -673,8 +673,8 @@ dev.off()
 
 # Note these data do not have DOIs
 
-PE_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Palaeontologia Electronica/PalaeontologiaElectronica_Scopus.csv")
-PE_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Palaeontologia Electronica/PalaeontologiaElectronica_Unpaywall.csv")
+PE_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/13-Palaeontologia_Electronica/PalaeontologiaElectronica_Scopus.csv")
+PE_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/13-Palaeontologia_Electronica/PalaeontologiaElectronica_Unpaywall.csv")
 
 # Create a new factor for OA status
 PE_OA<-PE_unpaywall[,"is_oa"]
@@ -719,8 +719,8 @@ dev.off()
 
 ############## Palaeontology
 
-Palaeontology_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Palaeontology/Palaeontology_Scopus.csv")
-Palaeontology_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Palaeontology/Palaeontology_Unpaywall.csv")
+Palaeontology_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/04-Palaeontology/Palaeontology_Scopus.csv")
+Palaeontology_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/04-Palaeontology/Palaeontology_Unpaywall.csv")
 
 # Create a new factor for OA status
 Palaeontology_OA<-Palaeontology_unpaywall[,"is_oa"]
@@ -766,8 +766,8 @@ dev.off()
 
 ############## Palaios
 
-Palaios_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Palaios/Palaios_Scopus.csv")
-Palaios_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Palaios/Palaios_Unpaywall.csv")
+Palaios_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/11-Palaios/Palaios_Scopus.csv")
+Palaios_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/11-Palaios/Palaios_Unpaywall.csv")
 
 # Create a new factor for OA status
 Palaios_OA<-Palaios_unpaywall[,"is_oa"]
@@ -811,10 +811,10 @@ barplot(prop.table(table(Palaios_OA)),main="Palaios, OA proportion")
 dev.off()
 
 
-############## Paläontologische Zeitschrift
+############## Pal?ontologische Zeitschrift
 
-PZ_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Paläontologische Zeitschrift/PaläontologischeZeitschrift_Scopus.csv")
-PZ_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Paläontologische Zeitschrift/PaläontologischeZeitschrift_Unpaywall.csv")
+PZ_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/20-PalÃ¤ontologische_Zeitschrift/Pal?ontologischeZeitschrift_Scopus.csv")
+PZ_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/20-PalÃ¤ontologische_Zeitschrift/Pal?ontologischeZeitschrift_Unpaywall.csv")
 
 # Create a new factor for OA status
 PZ_OA<-PZ_unpaywall[,"is_oa"]
@@ -826,10 +826,10 @@ PZ_cite<-PZ_scopus[,"Cited.by"]
 PZ_cite[is.na(PZ_cite)]<-0
 
 # Histogram plot
-dev.copy(png,'C:/Users/PC/Documents/GitHub/OpenPaleo/Results/Citation analysis/Paläontologische Zeitschrift/PaläontologischeZeitschrift_citefreq.png',
+dev.copy(png,'C:/Users/PC/Documents/GitHub/OpenPaleo/Results/Citation analysis/Pal?ontologische Zeitschrift/Pal?ontologischeZeitschrift_citefreq.png',
          width=1000,height=600)
 PZ_hist<-hist(PZ_cite,col="red",xlab="Citation count",
-                   main="Paläontologische Zeitschrift",breaks=20)
+                   main="Pal?ontologische Zeitschrift",breaks=20)
 
 # Add a normal distribution curve
 xfit<-seq(min(PZ_cite),max(PZ_cite),length=100) 
@@ -840,7 +840,7 @@ abline(v=1.095,col="blue",lwd=2,lty=2) # 2016 JIF
 dev.off()
 
 # Try a density plot instead
-dev.copy(png,'C:/Users/PC/Documents/GitHub/OpenPaleo/Results/Citation analysis/Paläontologische Zeitschrift/PaläontologischeZeitschrift_citedensity.png',
+dev.copy(png,'C:/Users/PC/Documents/GitHub/OpenPaleo/Results/Citation analysis/Pal?ontologische Zeitschrift/Pal?ontologischeZeitschrift_citedensity.png',
          width=1000,height=600)
 plot(density(PZ_cite),xlab="Citation count",
      main="PZ")
@@ -852,9 +852,9 @@ dev.off()
 summary(PZ_OA)
 
 # Plot as a proportional barplot
-dev.copy(png,'C:/Users/PC/Documents/GitHub/OpenPaleo/Results/OA analysis/Paläontologische Zeitschrift/Paläontologische Zeitschrift_OAprop.png',
+dev.copy(png,'C:/Users/PC/Documents/GitHub/OpenPaleo/Results/OA analysis/Pal?ontologische Zeitschrift/Pal?ontologische Zeitschrift_OAprop.png',
          width=1000,height=600)
-barplot(prop.table(table(PZ_OA)),main="Paläontologische Zeitschrift, OA proportion")
+barplot(prop.table(table(PZ_OA)),main="Pal?ontologische Zeitschrift, OA proportion")
 dev.off()
 
 
