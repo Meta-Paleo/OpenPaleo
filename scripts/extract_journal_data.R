@@ -813,8 +813,8 @@ dev.off()
 
 ############## Pal?ontologische Zeitschrift
 
-PZ_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/20-Paläontologische_Zeitschrift/Pal?ontologischeZeitschrift_Scopus.csv")
-PZ_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/20-Paläontologische_Zeitschrift/Pal?ontologischeZeitschrift_Unpaywall.csv")
+PZ_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/20-Paläontologische_Zeitschrift/PaläontologischeZeitschrift_Scopus.csv")
+PZ_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/20-Paläontologische_Zeitschrift/PaläontologischeZeitschrift_Unpaywall.csv")
 
 # Create a new factor for OA status
 PZ_OA<-PZ_unpaywall[,"is_oa"]
@@ -860,8 +860,8 @@ dev.off()
 
 ############## Paleobiology
 
-Paleobiology_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Paleobiology/Paleobiology_Scopus.csv")
-Paleobiology_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Paleobiology/Paleobiology_Unpaywall.csv")
+Paleobiology_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/08-Paleobiology/Paleobiology_Scopus.csv")
+Paleobiology_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/08-Paleobiology/Paleobiology_Unpaywall.csv")
 
 # Create a new factor for OA status
 Paleobiology_OA<-Paleobiology_unpaywall[,"is_oa"]
@@ -907,8 +907,8 @@ dev.off()
 
 ############## Review of Palaeobotany and Palynology
 
-RPP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Review of Palaeobotany and Palynology/ReviewofPalaeobotanyandPalynology_Scopus.csv")
-RPP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/Journal data/Review of Palaeobotany and Palynology/ReviewofPalaeobotanyandPalynology_Unpaywall.csv")
+RPP_scopus<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/05-Review_of_Palaeobotany_and_Palynology/ReviewofPalaeobotanyandPalynology_Scopus.csv")
+RPP_unpaywall<-read.csv("C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/05-Review_of_Palaeobotany_and_Palynology/ReviewofPalaeobotanyandPalynology_Unpaywall.csv")
 
 # Create a new factor for OA status
 RPP_OA<-RPP_unpaywall[,"is_oa"]

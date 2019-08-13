@@ -24,7 +24,7 @@ plot.width <- as.numeric(args[2])
 plot.height <- as.numeric(args[3]); plot.resolution <- as.numeric(args[4])
 
 # read tsv file with readr
-data <- read_tsv(input.file, col_names = TRUE)
+data <- read_tsv(C:/Users/PC/Documents/GitHub/OpenPaleo/data/journal_data/paleo_journals_scopus_unpaywall_data.tsv, col_names = TRUE)
 
 # plot stacked density plot in png format
 png("paleo_journals_citation_distribution_oa_status.png", width=plot.width, height=plot.height, units='in', res=plot.resolution)
